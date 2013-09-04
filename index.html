@@ -6,10 +6,13 @@
 </head>
 <body ng-controller="MainController">
 
-<h1>Hi</h1>
+<h1>CReddit</h1>
 <!-- <button ng-click="getArticles()">clicky</button> -->
 <div ng-repeat="item in articles">
-  <img ng-src="{{item.data.thumbnail}}" />
+  <a href="{{item.data.url}}">
+    <img ng-src="{{item.data.thumbnail}}" />
+    {{item.data.title}}
+  </a>
 </div>
 
   <script type="text/javascript" src="js/vendor/angular/angular.js"></script>
