@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <!-- Bootstrap our AngularJS app and setup -->
-<html>
+<html ng-app="myApp">
 <head>
   <title>my Angular App</title>
 </head>
-<body>
+<body ng-controller="MainController">
 
 <h1>Hi</h1>
+<!-- <button ng-click="getArticles()">clicky</button> -->
+<div ng-repeat="item in articles">
+  <img ng-src="{{item.data.thumbnail}}" />
+</div>
 
   <script type="text/javascript" src="js/vendor/angular/angular.js"></script>
   <script type="text/javascript" src="js/vendor/angular-route/angular-route.js"></script>
