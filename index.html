@@ -7,13 +7,7 @@
 <body ng-controller="MainController">
 
 <h1>CReddit</h1>
-<!-- <button ng-click="getArticles()">clicky</button> -->
-<div ng-repeat="item in articles">
-  <a href="{{item.data.url}}">
-    <img ng-src="{{item.data.thumbnail}}" />
-    {{item.data.title}}
-  </a>
-</div>
+<div ng-view></div>
 
   <script type="text/javascript" src="js/vendor/angular/angular.js"></script>
   <script type="text/javascript" src="js/vendor/angular-route/angular-route.js"></script>

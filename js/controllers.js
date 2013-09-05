@@ -3,7 +3,7 @@ angular.module('myApp.controllers', [])
   $scope.getArticles = function() {
     $http({
       method: 'JSONP',
-      url:'http://www.reddit.com/r/all.json?jsonp=JSON_CALLBACK'})
+      url:'http://www.reddit.com/r/RedditLaqueristas.json?jsonp=JSON_CALLBACK'})
     .success(function(data, status){
       $scope.articles = data.data.children;
     })
@@ -12,4 +12,12 @@ angular.module('myApp.controllers', [])
     });
   };
   $scope.getArticles();
+  $scope.reorder = function(){
+    
+  };
+}])
+.controller('EntryController', ['$scope', function($scope){
+  $scope.score = 0;
+  $scope.increase = function(){$scope.score++; console.log($scope.score);};
+  $scope.decrease = function(){$scope.score--; console.log($scope.score);};
 }]);

@@ -12,25 +12,25 @@ To run the app, you'll need to run the included binary in `bin/start` and visit 
 
 Basic requirements
 
-* [ ] Use npm to install the dependencies that are listed in the `package.json`.
-* [ ] Use `bower` to install the client-side dependencies that are listed in the `bower.json`.
+* [ x] Use npm to install the dependencies that are listed in the `package.json`.
+* [ x] Use `bower` to install the client-side dependencies that are listed in the `bower.json`.
 * [ ] Create a basic AngularJS app skeleton that bootstraps and starts your AngularJS app.
 * [ ] Follow the first 4 steps of [this tutorial](http://www.ng-newsletter.com/posts/beginner2expert-how_to_start.html) and implement these app features:
-    * [ ] Create the angular app in `index.html`
-    * [ ] Create a `MainController` that controls the home screen
-    * [ ] Inside the `MainController` fetch the latest reddit articles through the [reddit api](http://www.reddit.com/dev/api)
-    * [ ] Lay out the view in the front-end to display the articles
-    * [ ] Add a button that rates up and create the corresponding method
-    * [ ] Add a button that rates down and create the corresponding method
+    * [ x] Create the angular app in `index.html`
+    * [ x] Create a `MainController` that controls the home screen
+    * [ x] Inside the `MainController` fetch the latest reddit articles through the [reddit api](http://www.reddit.com/dev/api)
+    * [x] Lay out the view in the front-end to display the articles
+    * [x] Add a button that rates up and create the corresponding method
+    * [x] Add a button that rates down and create the corresponding method
 * After the afternoon lecture, complete the following:
-    * [ ] Implement the home route (with controller/templates)
-    * [ ] Implement the login route (with controller/templates)
+    * [x] Implement the home route (with controller/templates)
+    * [x] Implement the login route (with controller/templates)
 
 Extra credit: 
 * [ ] Implement a news listing directive
 * [ ] Refactor your controllers so they don't contain any calls to the reddit api.  Move that code to a [service](http://www.ng-newsletter.com/posts/beginner2expert-services.html) (api [docs](http://docs-angularjs-org-dev.appspot.com/guide/dev_guide.services.understanding_services)).
-* [ ] Add design to the app to make it look nice
-* [ ] Create a rating directive that allows users to rate articles up and down
+* [ ] Add design to the  Create a rating directive that allows users to rate articles up and downapp to make it look nice
+* [ ]
 * [ ] Write an end-to-end test that proves the app covers the features of the app
 * [ ] Implement this app using `yeoman`
 
