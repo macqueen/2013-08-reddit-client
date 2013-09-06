@@ -1,10 +1,11 @@
-<div ng-repeat="item in articles">
+<div ng-repeat="item in articles | orderBy:'score':true">
   <div ng-controller="EntryController">
     <button ng-click="increase()">increase</button>
+    {{item.score}}
     <button ng-click="decrease()">decrease</button>
-    <a href="{{item.data.url}}">
-      <img ng-src="{{item.data.thumbnail}}" />
-      {{item.data.title}}
+    <a href="{{item.url}}">
+      <img ng-src="{{item.thumbnail}}" />
+      {{item.title}}
     </a>
   </div>
 </div>

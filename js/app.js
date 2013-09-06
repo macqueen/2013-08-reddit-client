@@ -1,4 +1,4 @@
-angular.module('myApp', ['ngRoute', 'myApp.controllers'])
+angular.module('myApp', ['ngRoute', 'myApp.controllers', 'myApp.services'])
 .config(['$routeProvider', function($routeProvider) {
   // Setup our routes here
   $routeProvider.when('/', {

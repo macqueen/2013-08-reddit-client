@@ -20,17 +20,17 @@ Basic requirements
     * [ x] Create a `MainController` that controls the home screen
     * [ x] Inside the `MainController` fetch the latest reddit articles through the [reddit api](http://www.reddit.com/dev/api)
     * [x] Lay out the view in the front-end to display the articles
-    * [x] Add a button that rates up and create the corresponding method
-    * [x] Add a button that rates down and create the corresponding method
+    * [ ] Add a button that rates up and create the corresponding method
+    * [ ] Add a button that rates down and create the corresponding method
 * After the afternoon lecture, complete the following:
-    * [x] Implement the home route (with controller/templates)
-    * [x] Implement the login route (with controller/templates)
+    * [ ] Implement the home route (with controller/templates)
+    * [ ] Implement the login route (with controller/templates)
 
 Extra credit: 
 * [ ] Implement a news listing directive
 * [ ] Refactor your controllers so they don't contain any calls to the reddit api.  Move that code to a [service](http://www.ng-newsletter.com/posts/beginner2expert-services.html) (api [docs](http://docs-angularjs-org-dev.appspot.com/guide/dev_guide.services.understanding_services)).
-* [ ] Add design to the  Create a rating directive that allows users to rate articles up and downapp to make it look nice
-* [ ]
+* [ ] Add design to the app to make it look nice
+* [ ] Create a rating directive that allows users to rate articles up and down
 * [ ] Write an end-to-end test that proves the app covers the features of the app
 * [ ] Implement this app using `yeoman`
 
