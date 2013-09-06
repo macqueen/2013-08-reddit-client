@@ -1,1 +1,12 @@
-<div>Please Log In</div>
+<div ng-controller='login'>
+  <div>Please Log In</div>
+  <input ng-model='username' type='text' value='Username'></input>
+  <input ng-model='password' type='text' value='Password'></input>
+  <button ng-click='submit()'></button>
+</div>
+<div ng-controller='signup'>
+  <div>Or sign up</div>
+  <input ng-model='username' type='text' value='Username'></input>
+  <input ng-model='password' type='text' value='Password'></input>
+  <button ng-click='submit()'></button>
+</div>
