@@ -37,7 +37,7 @@ angular.module('myApp.controllers', ['myApp.services', 'myApp.filters'])
   $scope.submit = function(){
     $http({
       method: 'POST',
-      url: 'localhost:3000/login',
+      url: 'http://localhost:3000/login',
       data: {
         username: $scope.username,
         password: $scope.password
@@ -48,11 +48,11 @@ angular.module('myApp.controllers', ['myApp.services', 'myApp.filters'])
     });
   };
 }])
-.controller('signup', ['$scope', function($scope){
+.controller('signup', ['$scope', '$http', function($scope, $http){
   $scope.submit = function(){
     $http({
       method: 'POST',
-      url: 'localhost:3000/signup',
+      url: 'http://localhost:3000/signup',
       data: {
         username: $scope.username,
         password: $scope.password
